@@ -19,7 +19,7 @@
         <TextView
             android:id="@+id/name"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="32dp"
             android:background="#ffffff"
@@ -63,6 +63,32 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/phone"
             app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@{userProfile.genderAsText}"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender"
+            tools:srcCompat="@tools:sample/avatars" />
+
+<!--        MyBindingAdapter를 static으로 선언해야하는데 이부분이 잘 안됨-->
+<!--        imageUrl="@{userProfile.profileImage}"-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
