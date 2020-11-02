@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var liveData = MutableLiveData<UserProfile>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {  
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
