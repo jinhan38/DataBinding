@@ -10,7 +10,7 @@ import com.databinding.databinding.ActivityEditBinding
 class EditActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityEditBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {            
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_edit)
 
